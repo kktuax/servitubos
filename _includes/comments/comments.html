@@ -1,0 +1,25 @@
+<div class="mx-4">
+	{% if include.slug %}{% assign slug = include.slug %}{% else %}{% assign slug = page.slug %}{% endif %}
+	{% if site.data.comments[slug] %}{% assign comments = site.data.comments[slug] | sort %}
+	{% for comment in comments %}{% assign next = forloop.index0 | plus: 1 %}{% assign c = comment[1] %}
+	<h3>{{ comments | size }} comment{% if comments.size != 1 %}s{% endif %}</h3>
+	<div id="comment-{{ comment[1].date }}" class="media">
+		<img alt="avatar for {{ c.name }}" src="https://www.gravatar.com/avatar/{{ c.email }}" class="mr-3 rounded-circle" height="80" width="80" />		
+		<div class="media-body">			
+			<h5>
+			  {% if c.url %}{% unless c.url == blank %}<a class="url" target="_blank" rel="external nofollow" href="{{ c.url }}">{% endunless %}{% endif %}
+			  {{ c.name }}
+			  {% if c.url %}{% unless c.url == blank %}</a>{% endunless %}{% endif %}
+			</h5>
+			<p>
+				<a class="text-muted font-weight-light" href="{% if include.slug %}/{{ include.slug }}/{% endif %}#comment-{{ c.date }}">
+				  {{ c.date | date: '%B %d, %Y %I:%M %p' }}
+				</a>
+			</p>			
+			{{ c.message | markdownify }}
+		</div>
+	</div>
+	{% endfor %}
+	{% endif %}
+	{% include comments/form.html slug=slug %}
+</div>

@@ -1,0 +1,18 @@
+<div class="container mx-2">
+	<ul class="pagination">
+	  {% if page.previous.url %}
+	  <li class="page-item">
+		  <a class="page-link" alt="{{ page.previous.title }}" href="{{ page.previous.url | relative_url }}">
+			  <span aria-hidden="true">&laquo;</span> {{ page.previous.title }}
+		  </a>
+	  </li>
+	  {% endif %}
+	  {% if page.next.url %}
+	  <li class="page-item">
+		  <a class="page-link" alt="{{ page.next.title }}" href="{{ page.next.url | relative_url }}">
+			{{ page.next.title }} <span aria-hidden="true">&raquo;</span>
+		  </a>
+	  </li>
+	  {% endif %}
+	</ul>
+</div>
