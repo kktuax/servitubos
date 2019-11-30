@@ -1,0 +1,52 @@
+---
+layout: page
+title: Problemas habituales
+subtitle: 
+permalink: /problemas/
+tags: 
+---
+
+<div class="row">
+	<div class="col-sm-4 list-group">
+	  <a href="#inundaciones" class="bg-secondary text-white list-group-item list-group-item-action">Inundaciones de aguas fecales o pluviales debidas a  atascos</a>
+	  <a href="#filtraciones" class="bg-secondary text-white list-group-item list-group-item-action">Filtraciones de agua procedentes de las tuberías</a>
+	  <a href="#olores" class="bg-secondary text-white list-group-item list-group-item-action" tabindex="-1" aria-disabled="true">Malos olores</a>
+	</div>
+	<div class="col-md-8">
+	{% capture includedMd %}{% include problemas_intro.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+	</div>
+</div>
+
+<a name="inundaciones"></a>
+<h2>Inundaciones de aguas fecales o pluviales debidas a atascos</h2>
+<div class="float-lg-left mr-3 mb-3 card text-white bg-danger" style="width: 18rem;">
+  <img src="{{ "/assets/img/inundaciones atascos.jpg" | relative_url }}" class="card-img-top" alt="Atasco en red fecal">
+  <div class="card-body">
+	<p class="card-text">Atasco en red fecal, el agua ha rebosado por la arqueta.</p>
+  </div>
+</div>
+<div class="clearfix">
+	{% capture includedMd %}{% include problemas_inundaciones.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+
+<a name="filtraciones"></a>
+<h2>Filtraciones de agua</h2>
+<div class="float-lg-left mr-3 mb-3 card text-white bg-danger" style="width: 18rem;">
+  <img src="{{ "/assets/img/filtracion fecales muro.jpg" | relative_url }}" class="card-img-top" alt="Atasco en red fecal">
+  <div class="card-body">
+	<p class="card-text">Aguas fecales procedentes de tubería filtrándose a través del muro.</p>
+  </div>
+</div>
+<div class="clearfix">
+	{% capture includedMd %}{% include problemas_filtraciones.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+
+<a name="olores"></a>
+<h2>Malos olores</h2>
+<div class="clearfix">
+	{% capture includedMd %}{% include problemas_olores.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>

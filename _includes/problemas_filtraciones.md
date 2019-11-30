@@ -1,0 +1,3 @@
+Derivada de falta de estanqueidad en las canalizaciones, el agua se escapa a través de grietas, roturas, juntas mal selladas, incluso arquetas rotas, produciéndose filtraciones en viviendas, garajes, patios, en huecos de escalera, ascensor, o en la vía pública, muchas veces se observa agua manando por taludes o muros consecuencia de estos problemas, incluso produciéndose contaminación en ríos y costas. 
+
+Un caso extremo, pero que resulta habitual, sería una filtración oculta, que no se manifiesta exteriormente, y que puede producir un lavado del terreno sobre el que se sustenta un edificio, ocasionando problemas, incluso en los apoyos del propio edificio.
