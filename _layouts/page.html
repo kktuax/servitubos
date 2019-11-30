@@ -16,9 +16,5 @@ layout: default
     {% endunless %}
 	
 	{{ content }}
-	
-  <!-- Tag list for portfolio -->
-  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
-  {% include tags_list.html tags=tag_list %}
 
 </div>

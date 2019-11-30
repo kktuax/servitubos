@@ -4,8 +4,6 @@ url: "https://servitubos.es"
 title: Localización de problemas en tuberías # site's title
 description: "serviTubos" # used by search engines
 
-future: true
-
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
@@ -21,54 +19,8 @@ theme_settings:
     Juan Ortiz. Colegiado 1182 COAATCAN.
 
   # Icons
-  rss: false  # Make sure you created a feed.xml with feed.xml layout
   email_address: "coaatcan1182@gmail.com" # Full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  gitlab:
-  github: 
-  google_plus:
-  instagram:
-  keybase:
-  linkedin: 
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: # "twitter username"
-  vimeo:
-  wordpress:
-  youtube:
-
-  # Sharing options
-  share_buttons:
-    facebook: false
-    twitter: false
-    google_plus: false
-    tumblr:
-    pinterest:
-    pocket:
-    reddit: false
-    linkedin: false
-    wordpress:
-    email: true
-
-  # Scripts / Features
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
-  
-  special_page:
-    search:
-      icon: "search"
-      enabled: false
-    tags:
-      icon: "tags"
-      enabled: false
 
   # Localization strings
   str_follow_on: "Follow on"
@@ -87,14 +39,6 @@ theme_settings:
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
   google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: false
-
-
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
 
 # BUILD SETTINGS
 markdown: kramdown
