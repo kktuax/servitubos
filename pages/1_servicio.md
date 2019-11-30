@@ -10,7 +10,7 @@ Inspección mediante cámara por el interior de las tuberías de aguas fecales y
 
 También se pueden realizar inspecciones en tuberías de suministro de agua potable (sin servicio) o en conductos de ventilación.
 
-## ¿Para qué sirven las inspecciónes?
+## ¿Para qué sirven las inspecciones?
 
  * Localizar problemas en tuberías que estarían ocasionando atascos o filtraciones y valorar cómo repararlos
  * Certificar la correcta ejecución en instalaciones de obra nueva.

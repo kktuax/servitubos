@@ -1,0 +1,125 @@
+---
+layout: page
+title: Soluciones
+subtitle: 
+permalink: /soluciones/
+tags: 
+---
+
+<div class="row p-3">
+	<div class="col-md-4 list-group">
+	  <a href="#limpieza" class="bg-secondary text-white list-group-item list-group-item-action">Limpieza y desatasco</a>
+	  <a href="#inspeccion" class="bg-secondary text-white list-group-item list-group-item-action">Inspección mediante cámara</a>
+	  <a href="#localizacion" class="bg-secondary text-white list-group-item list-group-item-action">Localización del punto conflictivo</a>
+	  <a href="#solucion" class="bg-secondary text-white list-group-item list-group-item-action">Elección de la solucion</a>
+	  <a href="#sin-zanjas" class="bg-secondary text-white list-group-item list-group-item-action">Métodos sin zanjas</a>	  
+	</div>
+	<div class="col-md-8">
+	{% capture includedMd %}{% include soluciones_intro.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+	</div>
+</div>
+
+<a name="limpieza"></a>
+<h2>Limpieza</h2>
+<div>
+	{% capture includedMd %}{% include soluciones_limpieza.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+
+<a name="inspeccion"></a>
+<h2>Inspección con cámara</h2>
+<div>
+	{% capture includedMd %}{% include soluciones_inspeccion.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+<div class="card-group mb-3">
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/CCTV-Inspection.jpg" | relative_url }}" class="card-img-top" alt="tubería de gres agrietada">
+    <div class="card-body">
+		<h5 class="card-title">Tubería de gres agrietada en toda su sección</h5>
+		<p class="card-text">El agrietamiento de la base implica fuga directa del agua al terreno</p>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/collapsed-pipe.jpg" | relative_url }}" class="card-img-top" alt="Tubería de gres totalmente hundida">
+    <div class="card-body"><h5 class="card-title">Tubería de gres totalmente hundida</h5></div>
+  </div>
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/image-2013-02-18-11-02-57_8.jpg" | relative_url }}" class="card-img-top" alt="Tubo de polietileno corrugado aplastado">
+    <div class="card-body"><h5 class="card-title">Tubo de polietileno corrugado aplastado</h5></div>
+  </div>
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/RAICES ESQUEMA.jpg" | relative_url }}" class="card-img-top" alt="Esquema de intrusión de raíces en tubería de gres">
+    <div class="card-body"><h5 class="card-title">Esquema de intrusión de raíces en tubería de gres</h5></div>
+  </div>
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/atasco ARQUETA.jpg" | relative_url }}" class="card-img-top" alt="Arqueta atascada completamente con toallitas">
+    <div class="card-body"><h5 class="card-title">Arqueta atascada completamente con toallitas</h5></div>
+  </div>
+</div>
+
+<a name="localizacion"></a>
+<h2>Localización del punto conflictivo</h2>
+<div>
+	{% capture includedMd %}{% include soluciones_localizacion.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+<div class="card mb-3" style="max-width: 450px;">
+  <img src="{{ "/assets/img/LOCALIZACION SONDA.jpg" | relative_url }}" class="card-img-top" alt="Localización de punto mediante sonda">
+  <div class="card-body"><h5 class="card-title">Esquema básico de localización de punto mediante sonda</h5></div>
+</div>
+
+<a name="solucion"></a>
+<h2>Cómo solucionar las causas que originan los problemas</h2>
+<div>
+	{% capture includedMd %}{% include soluciones_solucion.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+
+<a name="sin-zanjas"></a>
+<h2>Métodos sin zanjas</h2>
+<div class="float-lg-left mr-3 mb-3 card bg-light" style="max-width: 300px;">
+  <img src="{{ "/assets/img/liner-beyond-host-pipe-300x223.jpg" | relative_url }}" class="card-img-top" alt="Camisa interior">
+  <div class="card-body"><h5 class="card-title">Esquema tubería rota-camisa interior</h5></div>
+</div>
+<div class="clearfix">
+	{% capture includedMd %}{% include soluciones_sinzanjas_intro.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+
+<h3>Encamisado parcial</h3>
+<div>
+	{% capture includedMd %}{% include soluciones_sinzanjas_parcial.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+<div class="card-group mb-3">
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/Drain_Packer.jpg" | relative_url }}" class="card-img-top" alt="instalación de packer">
+    <div class="card-body"><h5 class="card-title">Obturador inflado en interior de tubería para colocar “packer”</h5></div>
+  </div>
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/PACKER COLOCADO 1.jpg" | relative_url }}" class="card-img-top" alt="verificación de packer">
+    <div class="card-body"><h5 class="card-title">Ejemplo de verificación de packer colocado en tubería de PVC</h5></div>
+  </div>
+</div>  
+
+<h3>Encamisado total</h3>
+<div>
+	{% capture includedMd %}{% include soluciones_sinzanjas_total.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+<div class="card-group mb-3">
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/uva-power-light.jpg" | relative_url }}" class="card-img-top" alt="tren de lámparas">
+    <div class="card-body"><h5 class="card-title">Pequeño tren de lámparas ultravioleta</h5></div>
+  </div>
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/maxresdefault.jpg" | relative_url }}" class="card-img-top" alt="proceso de curado">
+    <div class="card-body"><h5 class="card-title">Esquema de tren de lámparas en proceso de curado</h5></div>
+  </div>
+  <div class="card bg-light">
+    <img src="{{ "/assets/img/QFOMcuredliner.jpg" | relative_url }}" class="card-img-top" alt="manga colocada">
+    <div class="card-body"><h5 class="card-title">Como resultado se obtiene una grabación de la manga colocada</h5></div>
+  </div>
+</div>  
