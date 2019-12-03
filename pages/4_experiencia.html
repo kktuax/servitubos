@@ -1,0 +1,30 @@
+---
+layout: page
+title: Experiencia
+subtitle: 
+permalink: /experiencia/
+sections:
+ - link: clientes
+   title: Clientes
+ - link: equipos
+   title: Equipos
+---
+
+<div>
+	{% capture includedMd %}{% include experiencia_intro.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+
+<a name="clientes"></a>
+<h2>Clientes</h2>
+<div>
+	{% capture includedMd %}{% include experiencia_clientes.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
+
+<a name="equipos"></a>
+<h2>Equipos</h2>
+<div>
+	{% capture includedMd %}{% include experiencia_equipos.md %}{% endcapture %} 
+	{{ includedMd | markdownify }}
+</div>
