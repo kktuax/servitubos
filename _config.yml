@@ -1,8 +1,8 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://servitubos.es"
-title: Localización de problemas en tuberías # site's title
-description: "serviTubos" # used by search engines
+title: Ponga fin a sus problemas de atascos y fugas # site's title
+description: "Localizace y ponga fin a sus problemas de atascos y fugas en tuberías de desagües" # used by search engines
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -13,10 +13,9 @@ theme_settings:
   gravatar: "3990963d564f97198086796f6bda1833" # Email MD5 hash
 
   # Header and footer text
-  header_text: Localización de problemas en tuberías
-  header_feature_image: assets/img/sewer.jpg
+  header_text: Localice y ponga fin a problemas de atascos y fugas en tuberías de desagües
   footer_text: >
-    Juan Ortiz. Colegiado 1182 COAATCAN.
+    Juan Ortiz. Nº Colegiado 1182 COAATCAN. Teléfono 667 888 398
 
   # Icons
   email_address: "coaatcan1182@gmail.com" # Full email address, e.g. "sam@example.com"

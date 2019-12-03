@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 	{% include head.html %}
+	<body style="background-color: #8B4513">
 	{% include navbar.html %}
-	<main role="main" style="background-color: #8B4513" >
-		<div class="mt-3 p-0 container bg-white">
+	<main role="main">
+		<div class="mt-3 p-4 my-2 container border border-dark rounded bg-white">
 		  {{ content }}
 		</div>
 	</main>  
 	{% include footer.html %}
+	</body>
 </html>

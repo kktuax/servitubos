@@ -1,13 +1,22 @@
 {% if site.theme_settings.footer_text %}
-<footer id="sticky-footer" class="py-4 bg-secondary text-white-50">
-	<div class="container">
-    <p class="text text-center">{{ site.theme_settings.footer_text }}</p>
-		<div class="footer-icons text-center">
-			<ul class="list-inline">
-			{% include icons.html %}
-			</ul>
-		</div>
-	</div>
+<footer class="m-0 py-2 bg-dark text-white-50">
+	<p class="text text-center">
+		{{ site.theme_settings.footer_text }} 
+		{% if site.theme_settings.email_address %}
+		{% assign email_parts = site.theme_settings.email_address | split: "@" %}
+		<span><a 
+		   data-username="{{ email_parts.first }}" 
+		   data-domain="{{ email_parts.last }}" 
+		   href="#" title="{{ site.theme_settings.str_email }}"
+		   onclick="this.href = 'mailto:' + this.dataset.username + '@' + this.dataset.domain"
+		 >
+			<span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+			</span>
+		</a></span>
+		{% endif %}
+	</p>
 </footer>
 {% endif %}
 

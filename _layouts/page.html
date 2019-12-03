@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-
-<div class="p-4 my-2 container border border-dark rounded ">
 	{% unless page.hide_title %}		
 	{% if page.feature-img %}
 	<img src="{{ page.feature-img | relative_url }}" alt="page.title" class="img-fluid w-25 mr-4 float-left rounded" />
@@ -16,5 +14,3 @@ layout: default
     {% endunless %}
 	
 	{{ content }}
-
-</div>
