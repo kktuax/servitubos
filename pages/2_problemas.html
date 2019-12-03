@@ -3,19 +3,18 @@ layout: page
 title: Problemas habituales
 subtitle: 
 permalink: /problemas/
-tags: 
+sections:
+ - link: inundaciones
+   title: Inundaciones de aguas
+ - link: filtraciones
+   title: Filtraciones de agua
+ - link: olores
+   title: Malos olores 
 ---
 
-<div class="row p-3">
-	<div class="col-md-4 list-group">
-	  <a href="#inundaciones" class="bg-secondary text-white list-group-item list-group-item-action">Inundaciones de aguas fecales o pluviales debidas a  atascos</a>
-	  <a href="#filtraciones" class="bg-secondary text-white list-group-item list-group-item-action">Filtraciones de agua procedentes de las tuberías</a>
-	  <a href="#olores" class="bg-secondary text-white list-group-item list-group-item-action">Malos olores</a>
-	</div>
-	<div class="col-md-8">
+<div>
 	{% capture includedMd %}{% include problemas_intro.md %}{% endcapture %} 
 	{{ includedMd | markdownify }}
-	</div>
 </div>
 
 <a name="inundaciones"></a>

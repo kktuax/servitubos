@@ -7,15 +7,26 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		<div class="navbar-nav">
+		<ul class="navbar-nav">
 			<!-- Auto Generation of NORMAL pages in the navbar -->
 			{% assign name_page = "" %}
 
 			{% for page in site.pages %}
 			{% if page.title and page.hide != true %}
 			{% if name_page contains page.title %}
+			{% elsif page.sections %}
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="{{ page.url | relative_url }}" id="navbarDropdown{{ section.link }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ page.title }}</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown{{ section.link }}">
+					<a class="dropdown-item" name="{{ page.title }}" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+					<div class="dropdown-divider"></div>
+					{% for section in page.sections %}
+						<a class="dropdown-item" href="{{ page.url | relative_url }}#{{ section.link }}">{{ section.title }}</a>
+					{% endfor %}
+					</div>
+				</li>
 			{% else %}
-				<a class="nav-item nav-link" name="{{ page.title }}" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+				<li class="nav-item"><a class="nav-link" name="{{ page.title }}" href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
 			{% endif %}
 			{% assign name_page = page.title | append: name_page %}
 			{% endif %}
@@ -24,11 +35,11 @@
 			<!-- Auto Generation of SPECIAL pages in the navbar -->
 			{% for item in site.theme_settings.special_page %}
 			  {% if item[1].enabled %}
-				  <a class="nav-item nav-link" href="{{ item[0] | relative_url }}" name="{{ item[0] }}">
+				  <li class="nav-item"><a class="nav-link" href="{{ item[0] | relative_url }}" name="{{ item[0] }}">
 					<i class="fa fa-{{ item[1].icon }}" aria-hidden="true"></i>
-				  </a>
+				  </a></li>
 			  {% endif %}
 			{% endfor %}
-		</div>
+		</ul>
 	</div>
 </nav>

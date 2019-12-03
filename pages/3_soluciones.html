@@ -3,21 +3,22 @@ layout: page
 title: Soluciones
 subtitle: 
 permalink: /soluciones/
-tags: 
+sections:
+ - link: limpieza
+   title: Limpieza y desatasco
+ - link: inspeccion
+   title: Inspección mediante cámara
+ - link: localizacion
+   title: Localización del punto conflictivo
+ - link: solucion
+   title: Elección de la solucion
+ - link: sin-zanjas
+   title: Métodos sin zanjas
 ---
 
-<div class="row p-3">
-	<div class="col-md-4 list-group">
-	  <a href="#limpieza" class="bg-secondary text-white list-group-item list-group-item-action">Limpieza y desatasco</a>
-	  <a href="#inspeccion" class="bg-secondary text-white list-group-item list-group-item-action">Inspección mediante cámara</a>
-	  <a href="#localizacion" class="bg-secondary text-white list-group-item list-group-item-action">Localización del punto conflictivo</a>
-	  <a href="#solucion" class="bg-secondary text-white list-group-item list-group-item-action">Elección de la solucion</a>
-	  <a href="#sin-zanjas" class="bg-secondary text-white list-group-item list-group-item-action">Métodos sin zanjas</a>	  
-	</div>
-	<div class="col-md-8">
+<div>
 	{% capture includedMd %}{% include soluciones_intro.md %}{% endcapture %} 
 	{{ includedMd | markdownify }}
-	</div>
 </div>
 
 <a name="limpieza"></a>
