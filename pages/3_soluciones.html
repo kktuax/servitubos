@@ -1,19 +1,19 @@
 ---
 layout: page
-title: Soluciones
+title: Soluciones. Método general de trabajo
 subtitle: 
 permalink: /soluciones/
 sections:
  - link: limpieza
-   title: Limpieza y desatasco
+   title: 1: Limpieza y desatasco
  - link: inspeccion
-   title: Inspección mediante cámara
+   title: 2: Inspección mediante cámara
  - link: localizacion
-   title: Localización del punto conflictivo
+   title: 3: Localización del punto conflictivo
  - link: solucion
-   title: Elección de la solucion
+   title: 4: Elección de la solucion
  - link: sin-zanjas
-   title: Métodos sin zanjas
+   title: Anexo. Métodos sin zanjas
 ---
 
 <div>
@@ -22,14 +22,14 @@ sections:
 </div>
 
 <a name="limpieza"></a>
-<h2>Limpieza</h2>
+<h2>Paso 1: Limpieza y desatasco si es necesario</h2>
 <div>
 	{% capture includedMd %}{% include soluciones_limpieza.md %}{% endcapture %} 
 	{{ includedMd | markdownify }}
 </div>
 
 <a name="inspeccion"></a>
-<h2>Inspección con cámara</h2>
+<h2>Paso 2: Inspección con cámara</h2>
 <div>
 	{% capture includedMd %}{% include soluciones_inspeccion.md %}{% endcapture %} 
 	{{ includedMd | markdownify }}
@@ -61,7 +61,7 @@ sections:
 </div>
 
 <a name="localizacion"></a>
-<h2>Localización del punto conflictivo</h2>
+<h2>Paso 3: Localización del punto conflictivo</h2>
 <div>
 	{% capture includedMd %}{% include soluciones_localizacion.md %}{% endcapture %} 
 	{{ includedMd | markdownify }}
@@ -72,14 +72,15 @@ sections:
 </div>
 
 <a name="solucion"></a>
-<h2>Cómo solucionar las causas que originan los problemas</h2>
+<h2>Paso 4: Elección de la solución 
+</h2>
 <div>
 	{% capture includedMd %}{% include soluciones_solucion.md %}{% endcapture %} 
 	{{ includedMd | markdownify }}
 </div>
 
 <a name="sin-zanjas"></a>
-<h2>Métodos sin zanjas</h2>
+<h2>Anexo: Métodos sin zanjas</h2>
 <div class="float-lg-left mr-3 mb-3 card bg-light" style="max-width: 300px;">
   <img src="{{ "/assets/img/liner-beyond-host-pipe-300x223.jpg" | relative_url }}" class="card-img-top" alt="Camisa interior">
   <div class="card-body"><h5 class="card-title">Esquema tubería rota-camisa interior</h5></div>
